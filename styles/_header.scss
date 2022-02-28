@@ -1,40 +1,50 @@
-.nav-bar {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    height: 11vh;
-    background-color: white;
-    .nav-bar-item:nth-child(1) {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
-        img {
-            padding: 15%;
-            margin-left: 15%;
-            display: -webkit-box;
-            display: -ms-flexbox;
-            display: flex;
-            -ms-flex-item-align: center;
-            -ms-grid-row-align: center;
-            align-self: center;
-        }
-    }
-    .nav-bar-item:nth-child(2) {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
-        -ms-grid-column-align: right;
-        justify-self: right;
-        padding: 20%;
+.helo {
+    position: absolute;
+    z-index: 8;
+}
 
-        p {
-            margin-right: 15%;
+.nav-bar-container {
+    background-color: $header-and-footer-background-color;
+    position: relative;
+    z-index: 9;
+    .nav-bar-sub-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 80px;
+        margin: 0 1.6em 0 1.6em;
+
+        .nav-button {
+            .line-container {
+                width: 60px;
+                display: block;
+                margin: 50px auto;
+                padding: 8px 10px;
+                transition: all 0.5s;
+                -webkit-transition: all 0.5s;
+            }
+
+            .line-container div {
+                height: 4px !important;
+                background: rgb(29, 28, 28);
+                margin: 7px 0px 7px 0px;
+                border-radius: 45px;
+                transition: all 0.5s;
+                -webkit-transition: all 0.5s;
+                .one {
+                    width: $nav-bar-line-width;
+                }
+                .two {
+                    width: $nav-bar-line-width;
+                }
+                .three {
+                    width: $nav-bar-line-width;
+                }
+                /* 
+                .line-containerr:hover div {
+                width: 60px;
+            }   */
+            }
         }
     }
 }

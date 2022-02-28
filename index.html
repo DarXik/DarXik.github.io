@@ -5,131 +5,158 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>logo</title>
+    <title>Document</title>
     <link rel="stylesheet" href="styles/reset.css">
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@300&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Exo:wght@500&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Pragati+Narrow:wght@700&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Wallpoet&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Hubballi&display=swap" rel="stylesheet">
 </head>
+<!--Náležitosti:
+    styly budou zapsané v SCSS
+        použijte moduly
+        nesting
+        proměnné
+        mixins (stačí alespoň jednu)
+    třídy v HTML (SCSS)
+        zapsané v AJ
+        snažte se názvy psát smysluplně k významu třídy
+        použije kebab-case - https://www.theserverside.com/definition/Kebab-case
+    pro názvy souborů nepoužívejte české názvy ani diakritiku
+    plně responzivní
+    doporučuji využít mobile-first
+        první vytvoření verze pro mobily
+        poté optimalizace pro větší zařízení
+Struktura složky projektu:
+    index.html
+    styles
+        _header.scss
+        _global.scss
+        styles.scss
+    images
+        img.svg
+        img.png
+    fonts - pouze v případě, že  budete stahovat fonty -->
 
 <body>
-    <header class="nav-bar">
-
-        <div class="nav-bar-item">
-            <img src="imgs/default-logo.png" alt="logo">
-        </div>
-
-        <div class="nav-bar-item">
-            <p></p>
-        </div>
-
-    </header>
-    <section class="main-content">
-        <div class="sub-main-content">
-            <div class="sub-main-item">
-                <p>
-                    WE CREATE BRANDS THE WORLD LOVES
-                </p>
-            </div>
-            <div class="sub-main-item">
-                <p>
-                    About Design Studio
-                </p>
-            </div>
-            <div class="sub-main-item">
-                <p>
-                    Paragraph. Lorem ipsum dolor sit amet, consectetur adipiscing elitsapien. Quisque fringilla sit amet
-                    dolor commodo efficitur. Aliquam et sem odio. In ullam corper nisi
-                    nunc, et molestie ipsum iaculis sit ame
-                </p>
-            </div>
-            <div class="button">
-
-                <a
-                    href="https://nicepage.com/website-templates/preview/custom-web-based-solutions-117537?device=desktop"><button>
-                        LEARN MORE
-                    </button></a>
-            </div>
-        </div>
-        <div class="grid">
-            <div id="3">
-                <div class="sub-grid">
-                    <div class="A">
-                        <img src="imgs/bag.svg" alt="bag">
-                        <h1>Sample Headline</h1>
-                        <p>Sample text. Click to select the text box. Click again or double click to start editing the text.
-                        </p>
-                    </div>
-                    <div class="B">
-                        <img src="imgs/rocket.svg" alt="rocket">
-                        <h1>Sample Headline</h1>
-                        <p>Sample text. Click to select the text box. Click again or double click to start editing the text.
-                        </p>
-                    </div>
-                    <div class="C">
-                        <img src="imgs/palette.svg" alt="palette">
-                        <h1>Sample Headline</h1>
-                        <p>Sample text. Click to select the text box. Click again or double click to start editing the text.
-                        </p>
-                    </div>
-                    <div class="D">
-                        <img src="imgs/megaphone.svg" alt="megaphone">
-                        <h1>Sample Headline</h1>
-                        <p>Sample text. Click to select the text box. Click again or double click to start editing the text.
-                        </p>
+    <header>
+        <img class="helo" src="images/logo.png" alt="logo">
+        <nav class="nav-bar-container">
+            <div class="nav-bar-sub-container">
+                <div class="nav-icon">
+                    <img src="images/logo.png" alt="logo">
+                </div>
+                <div class="nav-button">
+                    <!-- <a href="" target="_blank" class="line-container"> </a> -->
+                    <div class="line-container">
+                        <div class="one"></div>
+                        <div class="two"></div>
+                        <div class="three"></div>
                     </div>
                 </div>
             </div>
-            
-        </div>
-
-    </section>
-    <footer class="footer-main">
-        <div class="sub-footer-main">
-            <div class="footer-item">
-                <p>Sample text. Click to select the text box. Click again or double click to start editing the text.</p>
+        </nav>
+    </header>
+    <section>
+        <div class="content-container">
+            <div class="welcome-banner">
+                <div>
+                    <h1>
+                        DOVOLENÁ S NÁMI
+                    </h1>
+                </div>
+                <div>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam in lorem sit amet leo accumsan
+                        lacinia. Sed convallis magna eu sem.
+                    </p>
+                </div>
+                <div>
+                    <button>CHCI S VÁMI!</button>
+                </div>
             </div>
-            <div class="footer-item">
-                <p>
-                    <span>Website Templates</span> created with <span>Website Builder Software</span>
-                </p>
+            <div class="offers-section">
+                <div class="offers-section-heading">
+                    <p>PROZKOUMEJTE KRÁSY EVROPSKÝCH OSTROVŮ</p>
+                </div>
+                <div class="offer-section-1">
+                    <div>
+                        <img src="images/offer1.jpg" alt="offer1">
+                    </div>
+                    <div class="sub-offer-section-1">
+                        <div>
+                            <h3>ATLANTICKÉ OSTROVY</h3>
+                        </div>
+                        <div>
+                            <p>
+                                Sed vel lectus. Donec odio tempus molestie, porttitor ut, iaculis quis, sem. Donec
+                                iaculis
+                                gravida nulla.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="offer-section-2">
+                    <div>
+                        <img src="images/offer2.jpg" alt="offer2">
+                    </div>
+                    <div class="sub-offer-section-2">
+                        <div>
+                            <h3>ZÁPADNÍ STŘEDOMOŘÍ</h3>
+                        </div>
+                        <div>
+                            <p>
+                                Sed vel lectus. Donec odio tempus molestie, porttitor ut, iaculis quis, sem. Donec
+                                iaculis
+                                gravida nulla.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="offer-section-3">
+                    <div>
+                        <img src="images/offer3.jpg" alt="offer3">
+                    </div>
+                    <div class="sub-offer-section-3">
+                        <div>
+                            <h3>VÝCHODNÍ STŘEDOMOŘÍ</h3>
+                        </div>
+                        <div>
+                            <p>
+                                Sed vel lectus. Donec odio tempus molestie, porttitor ut, iaculis quis, sem. Donec
+                                iaculis
+                                gravida nulla.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="registration-button">
+                <div>
+                    <button>CHCI S VÁMI!</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-information">
+                <div>
+                    OBCHODNÍ PODMÍNKY
+                </div>
+                <div>
+                    OCHRANA OSOBNÍCH ÚDAJŮ
+                </div>
             </div>
         </div>
     </footer>
+
 
 </body>
 

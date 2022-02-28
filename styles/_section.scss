@@ -1,0 +1,67 @@
+.content-container {
+    margin: 3em 2em 3em 2em;
+    .welcome-banner {
+        background-color: #7c7474;
+        display: flex;
+        flex-direction: column;
+        /* justify-items: center; */
+        align-items: center;
+        
+
+        h1 {
+            color: $general-text-color;
+            margin: 1em;
+        }
+        p {
+            margin: 1em;
+            color: $general-text-color;
+        }
+        button {
+            margin: 1em;
+            padding: 1% 1.5em 1% 1.5em;
+            background-color: #a19b98;
+            border: #a19b98 1px solid;
+            font-size: 0.9rem;
+            box-shadow: 0px 3px 25px 0px rgba(0, 0, 0, 0.3);
+        }
+    }
+    .offers-section {
+        .offers-section-heading {
+        }
+        .offer-section-1 {
+            /* background: url(/wba-pitra-david-2k/individual-work/pitra-2k-web-figma-1/images/offer1.jpg);
+            background-repeat: no-repeat; */
+            img{
+                width:300px;
+                height: fit-content;
+            }
+            margin-top: 5vh;
+            @include offers-flex-settings;
+            .sub-offer-section-1 {
+                @include sub-offers-flex-and-text-settings;
+            }
+        }
+        .offer-section-2 {
+            img{
+                width:300px;
+                height: fit-content;
+            }
+            margin-top: 5vh;
+            @include offers-flex-settings;
+            .sub-offer-section-2 {
+                @include sub-offers-flex-and-text-settings;
+            }
+        }
+        .offer-section-3 {
+            img{
+                width:300px;
+                height: fit-content;
+            }
+            margin-top: 5vh;
+            @include offers-flex-settings;
+            .sub-offer-section-3 {
+                @include sub-offers-flex-and-text-settings;
+            }
+        }
+    }
+}
