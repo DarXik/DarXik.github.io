@@ -1,12 +1,14 @@
-.helo {
-    position: absolute;
-    z-index: 8;
-}
-
 .nav-bar-container {
+    button {
+        display: none;
+    }
+    /* position: relative;
+    z-index: 9; */
+    height: 8vh; /* malý kousek pod - max-height */
     background-color: $header-and-footer-background-color;
-    position: relative;
-    z-index: 9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     .nav-bar-sub-container {
         display: flex;
         justify-content: space-between;
@@ -18,7 +20,7 @@
             .line-container {
                 width: 60px;
                 display: block;
-                margin: 50px auto;
+                /* proužek pod headerem */
                 padding: 8px 10px;
                 transition: all 0.5s;
                 -webkit-transition: all 0.5s;
@@ -46,5 +48,14 @@
             }   */
             }
         }
+    }
+}
+
+@media only screen and (min-width: 1600px) and (min-height: 720px) and (orientation: landscape) {
+    .nav-bar-container {
+        height: 10vh;
+    }
+    button {
+        background-color: rgba(0, 0, 0, 0);
     }
 }
