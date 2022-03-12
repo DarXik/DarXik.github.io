@@ -35,7 +35,21 @@ body::-webkit-scrollbar {
 }
 
 .nav-bar-container button {
-  display: none;
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px solid rgba(0, 0, 0, 0);
+  color: #000000;
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 8px;
+  border-radius: 2px;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+}
+
+.nav-bar-container button:hover {
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 .nav-bar-container .nav-bar-sub-container {
@@ -48,8 +62,17 @@ body::-webkit-scrollbar {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 80px;
-  margin: 0 1.6em 0 1.6em;
+  margin: 0 3% 0 3%;
+}
+
+.nav-bar-container .nav-bar-sub-container .nav-icon img {
+  min-width: 100%;
+  height: 90%;
+}
+
+.nav-bar-container .nav-bar-sub-container .nav-button {
+  position: relative;
+  z-index: 9;
 }
 
 .nav-bar-container .nav-bar-sub-container .nav-button .line-container {
@@ -86,12 +109,23 @@ body::-webkit-scrollbar {
   width: 30px;
 }
 
+.nav-bar-container .nav-bar-sub-container .buttons-contaier {
+  /* display: none; */
+  position: relative;
+  z-index: 8;
+}
+
 @media only screen and (min-width: 1600px) and (min-height: 720px) and (orientation: landscape) {
   .nav-bar-container {
     height: 10vh;
   }
-  button {
-    background-color: rgba(0, 0, 0, 0);
+  .nav-bar-container .nav-bar-sub-container .nav-button {
+    display: none;
+  }
+  .nav-bar-container .buttons-contaier {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 
@@ -127,8 +161,8 @@ body::-webkit-scrollbar {
 .content-container .welcome-banner button {
   margin: 1.1em;
   padding: 1% 1.5em 1% 1.5em;
-  background-color: #a19b98;
-  border: #a19b98 1px solid;
+  background-color: #7c7474;
+  border: #7c7474 1px solid;
   font-size: 0.9rem;
   -webkit-box-shadow: 0px 3px 25px 0px rgba(0, 0, 0, 0.3);
           box-shadow: 0px 3px 25px 0px rgba(0, 0, 0, 0.3);
@@ -300,8 +334,8 @@ body::-webkit-scrollbar {
 
 .registration-button button {
   padding: 1% 1.5em 1% 1.5em;
-  background-color: #a19b98;
-  border: #a19b98 1px solid;
+  background-color: #7c7474;
+  border: #7c7474 1px solid;
   font-size: 0.9rem;
   -webkit-box-shadow: 0px 3px 25px 0px rgba(0, 0, 0, 0.3);
           box-shadow: 0px 3px 25px 0px rgba(0, 0, 0, 0.3);
@@ -317,7 +351,7 @@ body::-webkit-scrollbar {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 70vh;
+    height: 85vh;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -666,21 +700,25 @@ footer .footer-information {
 }
 
 .contact-content-container .contact-content-sub-container {
-  height: 75vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin: 7vh 3vw 6vh 3vw;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+}
+
+.contact-content-container .contact-content-sub-container .contact-content-sub-sub-container {
+  /*height: 40vh;
+             display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between; */
+  margin: 3em 0 3em 0;
 }
 
 .contact-content-container .contact-content-sub-container input {
@@ -709,8 +747,8 @@ footer .footer-information {
 
 .contact-content-container .registration-button-contact button {
   padding: 1% 1.5em 1% 1.5em;
-  background-color: #a19b98;
-  border: #a19b98 1px solid;
+  background-color: #7c7474;
+  border: #7c7474 1px solid;
   font-size: 0.9rem;
   -webkit-box-shadow: 0px 3px 25px 0px rgba(0, 0, 0, 0.3);
           box-shadow: 0px 3px 25px 0px rgba(0, 0, 0, 0.3);
@@ -721,9 +759,15 @@ footer .footer-information {
   .contact-content-container {
     height: 80vh;
   }
+  .contact-content-container h1 {
+    font-size: 2.5rem;
+  }
   .contact-content-container .registration-button-contact {
     margin-top: 2em;
-    margin-bottom: 10vh;
+    margin-bottom: 5em;
+  }
+  .contact-content-container .registration-button-contact button {
+    font-size: 1.3rem;
   }
   .contact-content-container .contact-content-sub-sub-container {
     width: 35vw;
