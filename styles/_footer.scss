@@ -24,8 +24,31 @@
     }
 }
 
-
-/* mobile iPhone 8 plus */
+@media only screen and (max-width: $width-tablet-bp) {
+    .footer-main {
+        margin-inline: 12vw;
+        margin-top: 5em;
+        padding: .1em;
+        border-top: 2px solid $footer-color;
+        .footer-text-container {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            &:nth-child(1) {
+                p {
+                    color: $footer-color;
+                    font-size: clamp(.8vw, 1em);
+                    margin-top: .1em;
+                    span {
+                        color: $footer-color;
+                        text-decoration: underline;
+                        font-size: clamp(.8vw, 1em);
+                    }
+                }
+            }
+        }
+    }
+}
 
 @media only screen and (max-width: $width-iphone8-bp) {
     .footer-main {
@@ -53,7 +76,28 @@
     }
 }
 
-
-/* general */
-
-@media only screen and(max-width: $width-general-bp) {}
+@media only screen and(max-width: $width-general-bp) {
+    .footer-main {
+        margin-inline: 12vw;
+        margin-top: 3em;
+        padding: .1em;
+        border-top: 2px solid $footer-color;
+        .footer-text-container {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            &:nth-child(1) {
+                p {
+                    color: $footer-color;
+                    font-size: clamp(.8vw, 1em);
+                    margin-top: .1em;
+                    span {
+                        color: $footer-color;
+                        text-decoration: underline;
+                        font-size: clamp(.8vw, 1em);
+                    }
+                }
+            }
+        }
+    }
+}
