@@ -13,45 +13,43 @@
     <link rel="icon" href="images/dp-mini.png">
 </head>
 
-<body>
+<body onload="TypeEffect2()">
     <header>
         <nav>
             <div class="navbar-main">
                 <div class="logo">
-                    <a href="index.html"> <img src="images/dp-big-logo1.png" alt="logo" /></a>
+                    <a href="index.html"> <img id="respon-img-big" src="images/dp-big-logo1.png" alt="logo" /></a>
+                    <a href="index.html"> <img id="respon-img-mini" src="images/dp-mini-logo.png" alt="logo" /></a>
                 </div>
                 <div class="button">
-                    <ul class="button-container">
+                    <div class="button-container">
+                        <ul>
+                            <li><a href="index.html">visit homepage</a></li>
+                            <li><a href="about.html">read about us</a></li>
+                        </ul>
+                    </div>
+
+                    <!--  </button> -->
+                    <!-- <div class="action" onclick="actionToggle();">
+                        <span>+</span>
                         <li><a href="index.html">visit homepage</a></li>
                         <li><a href="about.html">read about us</a></li>
-                    </ul>
-                    <div class="action" onclick="actionToggle();">
-                        <span>+</span>
-
-                        <!-- <li><img src="https://www.flaticon.com/svg/static/icons/svg/2111/2111765.svg" alt="" width="25px">read about</li> -->
-                        <!-- <li><img src="https://www.flaticon.com/svg/static/icons/svg/2111/2111432.svg" alt="" width="25px">Share on
-                                GitHub</li>
-                            <li><img src="https://www.flaticon.com/svg/static/icons/svg/1384/1384031.svg" alt="" width="25px">Share on
-                                Instagram</li>
-                            <li><img src="https://www.flaticon.com/svg/static/icons/svg/2111/2111341.svg" alt="" width="25px">Share on
-                                Codepen</li>
-                            <li><img src="https://www.flaticon.com/svg/static/icons/svg/1384/1384030.svg" alt="" width="25px">Share on
-                                Linkedin</li> -->
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </nav>
     </header>
 
-    <main>
+    <main id="index">
         <section>
             <div class="first-section">
-                <div class="first-section-heading-container">
-                    <h1>Welcome here, pal</h1>
-                </div>
-                <div class="first-section-image-container">
-                    <img src="./images/15.jpg" alt="image" />
-                    <!-- <img src="./images/9.JPG" alt="image" /> -->
+                <div id="helper">
+                    <div class="first-section-heading-container">
+                        <h1 id="js2"></h1>
+                    </div>
+                    <div class="first-section-image-container">
+                        <img src="./images/15.jpg" alt="image" />
+                    </div>
                 </div>
                 <div class="first-section-paragraph-container">
                     <h2>
@@ -61,21 +59,21 @@
             </div>
             <div class="second-section">
                 <div class="second-section-content-organizer">
-                    <div class="second-section-first-image-desc-container">
+                    <div class="second-section-first-image-desc-container reveal action">
                         <img src="./images/20.JPG" alt="image" />
-
                         <div class="second-section-first-desc-container">
                             <div>
+                                <h4>Lorem ipsum</h4>
                                 <p>
                                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum optio illum dolorem quia, unde incidunt, ratione esse voluptatibus officiis atque quae id quisquam dolor eveniet doloremque aperiam inventore cupiditate eaque?
                                 </p>
                             </div>
                         </div>
-
                     </div>
-                    <div class="second-section-second-image-desc-container">
+                    <div class="second-section-second-image-desc-container reveal action">
                         <div class="second-section-second-desc-container">
                             <div>
+                                <h4>Lorem ipsum</h4>
                                 <p>
                                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum optio illum dolorem quia, unde incidunt, ratione esse voluptatibus officiis atque quae id quisquam dolor eveniet doloremque aperiam inventore cupiditate eaque?
                                 </p>
@@ -84,7 +82,7 @@
                         <img src="./images/3.JPG" alt="image" />
                     </div>
                 </div>
-                <div class="second-section-paragraph-container">
+                <div class="second-section-paragraph-container reveal action">
                     <h3>
                         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid sunt asperiores amet illum inventore ut eos natus vel, similique ducimus minima doloremque neque. Esse necessitatibus consequuntur animi impedit, earum numquam! Lorem ipsum dolor sit amet
                         necessitatibus consequuntur animi impedit, earum numquam!
@@ -93,7 +91,7 @@
                 </div>
             </div>
             <div class="third-section">
-                <div class="third-section-image-container">
+                <div class="third-section-image-container reveal action">
                     <div>
                         <img src="./images/6.JPG" alt="image" />
                     </div>
@@ -106,16 +104,23 @@
                     <div>
                         <img src="./images/background-about-1.jpg" alt="image" />
                     </div>
+                    <div>
+                        <img src="./images/31.jpg" alt="image" />
+                    </div>
+                    <div>
+                        <img src="./images/32.jpg" alt=" image " />
+                    </div>
 
                 </div>
 
 
-                <div class="third-section-image-desc-container">
+                <div class="third-section-image-desc-container ">
 
-                    <div class="third-section-image-desc-sub-container">
-                        <img src="./images/21.JPG" alt="image" />
-                        <div class="third-section-desc-container">
+                    <div class="third-section-image-desc-sub-container reveal action ">
+                        <img src="./images/21.JPG " alt="image " />
+                        <div class="third-section-desc-container ">
                             <div>
+                                <h4>Lorem ipsum</h4>
                                 <p>
                                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum optio illum dolorem quia, unde incidunt, ratione esse voluptatibus officiis atque quae id quisquam dolor eveniet doloremque aperiam inventore cupiditate eaque?
                                 </p>
@@ -128,10 +133,9 @@
             </div>
         </section>
     </main>
-
     <footer>
-        <div class="footer-main">
-            <div class="footer-text-container">
+        <div class="footer-main ">
+            <div class="footer-text-container ">
                 <div>
                     <p>Made by David Pitra</p>
                 </div>
@@ -139,20 +143,28 @@
                     <p>© 2022 - <span>All rights reserved</span> </p>
                 </div>
             </div>
-
         </div>
     </footer>
+    <script src="./scripts/index.js "></script>
+    <script>
+        window.addEventListener('scroll', reveal);
 
-    <!-- Optional JavaScript; choose one of the two! -->
+        function reveal() {
+            var reveals = document.querySelectorAll('.reveal');
 
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-    <script src="./scripts/index.js"></script>
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
-    -->
+            for (var i = 0; i < reveals.length; i++) {
+                var windowHeight = window.innerHeight;
+                var revealTop = reveals[i].getBoundingClientRect().top;
+                var revealPoint = 150;
+
+                if (revealTop < windowHeight - revealPoint) {
+                    reveals[i].classList.add('active');
+                } else {
+                    reveals[i].classList.remove('active');
+                }
+            }
+        }
+    </script>
 </body>
 
 </html>
