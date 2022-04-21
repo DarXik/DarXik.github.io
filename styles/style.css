@@ -107,7 +107,7 @@ select {
 @media (min-width: 1440) and (min-height: 900px) {}  
 @media (min-width: 601px) and (min-height: 962px) {} 
 */
-@media only screen and (min-width: 1600px) {
+@media only screen and (min-width: 1280px) {
   header {
     height: 4.5em;
     margin-bottom: 4em;
@@ -188,13 +188,8 @@ select {
     position: -webkit-sticky;
     position: sticky;
     top: 0;
+    background-color: white;
     z-index: 999;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
   }
   header nav {
     margin-inline: 1em;
@@ -416,7 +411,7 @@ select {
   }
 }
 
-@media only screen and (min-width: 1600px) {
+@media only screen and (min-width: 1280px) {
   .footer-main {
     margin-inline: 20vw;
     margin-top: 10em;
@@ -532,7 +527,7 @@ select {
   }
 }
 
-@media only screen and (min-width: 1600px) {
+@media only screen and (min-width: 1280px) {
   #index {
     margin-inline: 8em;
   }
@@ -1441,7 +1436,7 @@ select {
   }
 }
 
-@media only screen and (min-width: 1600px) {
+@media only screen and (min-width: 1280px) {
   #about {
     margin-inline: 8em;
   }
