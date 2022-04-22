@@ -1,0 +1,52 @@
+@mixin monochrome-image-setting {
+    filter: grayscale(1);
+    transition-duration: .3s;
+}
+
+@mixin hover-image-animation {
+    filter: grayscale(0);
+    transition-duration: .3s;
+    scale: 95%;
+}
+
+@mixin first-heading-container {
+    text-align: center;
+    margin-top: 2em;
+    h1 {
+        display: inline-flex;
+        padding: .5em;
+        font-size: 3rem;
+        transition-duration: .2s;
+    }
+}
+
+@mixin form-border-correction {
+    border: 1Px solid #ffffff00;
+    border-bottom: 1px solid #76767679;
+}
+
+@mixin about-page-box ($height-box-about, $width-box-about, $self-position) {
+    margin: 2em;
+    margin-bottom: 6em;
+    padding: 3em;
+    width: $width-box-about;
+    min-height: $height-box-about;
+    align-self: $self-position;
+    border-radius: 5px;
+}
+
+@mixin flex-column-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@mixin about-page-box-general-bp() {
+    margin: 1em;
+    margin-bottom: 4em;
+    padding: 2em;
+    width: fit-content;
+    align-self: center;
+    box-shadow: 0px 10px 20px 2px #81818131;
+    border-radius: 5px;
+}
