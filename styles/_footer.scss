@@ -7,17 +7,9 @@
         @include flex-column-center;
         align-items: center;
         .footer-text-container {
+            text-align: center;
             &:nth-child(1) {
-                p {
-                    color: $footer-color;
-                    margin-top: .3em;
-                    font-size: clamp(.8vw, 1em);
-                    span {
-                        color: $footer-color;
-                        text-decoration: underline;
-                        font-size: clamp(.8vw, 1em);
-                    }
-                }
+                @include p-and-a-footer-setting(.3em);
             }
         }
     }
@@ -32,17 +24,9 @@
         @include flex-column-center;
         align-items: center;
         .footer-text-container {
+            text-align: center;
             &:nth-child(1) {
-                p {
-                    color: $footer-color;
-                    font-size: clamp(.8vw, 1em);
-                    margin-top: .1em;
-                    span {
-                        color: $footer-color;
-                        text-decoration: underline;
-                        font-size: clamp(.8vw, 1em);
-                    }
-                }
+                @include p-and-a-footer-setting(.1em);
             }
         }
     }
@@ -57,17 +41,9 @@
         @include flex-column-center;
         align-items: center;
         .footer-text-container {
+            text-align: center;
             &:nth-child(1) {
-                p {
-                    color: $footer-color;
-                    font-size: clamp(.8vw, 1em);
-                    margin-top: .1em;
-                    span {
-                        color: $footer-color;
-                        text-decoration: underline;
-                        font-size: clamp(.8vw, 1em);
-                    }
-                }
+                @include p-and-a-footer-setting(.1em);
             }
         }
     }
@@ -82,17 +58,9 @@
         @include flex-column-center;
         align-items: center;
         .footer-text-container {
+            text-align: center;
             &:nth-child(1) {
-                p {
-                    color: $footer-color;
-                    font-size: clamp(.8vw, 1em);
-                    margin-top: .1em;
-                    span {
-                        color: $footer-color;
-                        text-decoration: underline;
-                        font-size: clamp(.8vw, 1em);
-                    }
-                }
+                @include p-and-a-footer-setting(.1em);
             }
         }
     }
