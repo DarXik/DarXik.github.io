@@ -1,0 +1,229 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role=list],
+ol[role=list] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+  *,
+*::before,
+*::after {
+    -webkit-animation-duration: 0.01ms !important;
+            animation-duration: 0.01ms !important;
+    -webkit-animation-iteration-count: 1 !important;
+            animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+@font-face {
+  src: url(./JustAnotherHand-Regular.ttf);
+  font-family: customFont;
+}
+body {
+  margin-inline: 10%;
+  background: #f8f8f8;
+  background-image: linear-gradient(90deg, rgba(158, 157, 157, 0.21) 0.5px, transparent 0), linear-gradient(rgba(158, 157, 157, 0.21) 0.5px, transparent 0);
+  background-size: 25rem 25rem;
+}
+
+header {
+  height: 10vh;
+}
+section main {
+  height: 70vh;
+  margin-inline: 15em;
+  box-shadow: 1px -1px 49px -8px rgba(0, 0, 0, 0.33);
+  border-radius: 2px;
+  border: 4px solid transparent;
+  margin-bottom: 12vh;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+section main .validator {
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: customFont;
+}
+section main .validator .sub-validator {
+  text-align: center;
+  font-size: xx-large;
+}
+section main .validator .sub-validator {
+  display: inline-block;
+  border: 3px solid #333333;
+  font-size: 2.5rem;
+  border-radius: 2% 6% 5% 4%/1% 1% 2% 4%;
+  text-transform: uppercase;
+  letter-spacing: 0.3ch;
+  background: #ffffff;
+  position: relative;
+}
+section main .validator .sub-validator::before {
+  content: "";
+  border: 2px solid #353535;
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0) scale(1.015) rotate(0.5deg);
+  border-radius: 1% 1% 2% 4%/2% 6% 5% 4%;
+}
+section main .section-main {
+  height: 40vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+section main .section-main .question-container {
+  max-width: 20em;
+  max-height: 20em;
+  margin-right: 2vw;
+}
+section main .section-main .question-container p {
+  font-size: larger;
+  border-left: 3px solid rgb(112, 105, 170);
+  padding-left: 15px;
+}
+section main .section-main .answer-container {
+  max-width: 20em;
+  max-height: 20em;
+}
+section main .section-main .answer-container #answered-word {
+  border: 1px solid rgba(255, 255, 255, 0);
+  border-bottom: 1px solid rgba(118, 118, 118, 0.4745098039);
+  transition: all 0.3s ease-in-out;
+  outline: none;
+  border-radius: 2px;
+  font-size: larger;
+}
+section main .section-main .answer-container #answered-word:focus {
+  transition-duration: all 0.3s ease-in-out;
+  border-bottom: 1px solid black;
+  color: black;
+  filter: drop-shadow(1px 1px 5px rgba(10, 10, 10, 0.045));
+}
+section main .button-container {
+  height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section main .button-container .button-55:focus {
+  box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 4px -6px;
+}
+section main .button-container .button-54 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000;
+  cursor: pointer;
+  border: 3px solid;
+  padding: 0.25em 0.5em;
+  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+  position: relative;
+  -moz-user-select: none;
+   -ms-user-select: none;
+       user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin-left: 4em;
+}
+section main .button-container .button-54:active {
+  box-shadow: 0px 0px 0px 0px;
+  top: 5px;
+  left: 5px;
+}
+@media (min-width: 768px) {
+  section main .button-container .button-54 {
+    padding: 0.25em 0.75em;
+  }
+}
+
+footer {
+  height: 8vh;
+}
+footer .footer-main {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+footer .footer-main .sub-main {
+  border-top: 1px solid rgba(0, 0, 0, 0.21);
+  background-color: #f8f8f8;
+  width: 30vw;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}/*# sourceMappingURL=style.css.map */
