@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   </head>
   <body>
     <header>
@@ -16,32 +17,31 @@
     </header>
     <section>
       <main id="main">
-        <div class="validator">
-          <div class="sub-validator">
-            <h4 id="validator">answer please</h4>
-          </div>
+        <!-- <div>
+            <p> Gentle Tilt </p>
+            <span class="gentle-hover-shake">Hover on me!</span>
+          </div> -->
+        <div class="title">
+          <h4>answer please</h4>
         </div>
         <div class="section-main">
-          <div class="question-container">
-            <p id="enWord">sample-word</p>
+          <div class="question-container" id="shake">
+            <p id="enWord"></p>
           </div>
           <div class="answer-container">
-            <!-- <input type="text" name="answer here" id="ansWord" />
-            <input type="submit" value="submit" > -->
-            <form>
-              <input type="text" id="input_id" value="" />
-              <!-- <input type="button" value="Submit" onclick="taker()" /> -->
-              <!-- <div id="alert" style="color: red"></div> -->
-            </form>
+            <div class="col-3">
+              <input class="effect-8" id="input_id" type="text"
+              placeholder="Answer here" value="" /autofocus>
+              <span class="focus-border">
+                <i></i> <!-- input element effects only on the up and down without "i" -->
+              </span>
+            </div>
           </div>
         </div>
         <div class="button-container">
           <div>
-            <!-- <button class="button" id="confirmBtn" onclick="taker()"><span>Submit</span></button> -->
             <button class="button-54" id="confirmBtn">Submit</button>
-            <button class="button-54" id="nextBtn" onclick="reloader()">
-              Next
-            </button>
+            <button class="button-54" id="nextBtn">Next</button>
           </div>
         </div>
       </main>
@@ -50,16 +50,14 @@
       <div class="footer-main">
         <div class="sub-main">
           <div>
-            <p>David Pitra</p>
+            <p>David Pitra's Private Dictionary</p>
           </div>
           <div>
-            <p>Soukromý slovníček</p>
+            <p>Use only for educational purposes</p>
           </div>
         </div>
       </div>
     </footer>
-    <script type="module" src="./index.js"></script>
-    <!-- type="module" -->
-    <!-- <script src="./methods.js"></script> -->
+    <script type="module" src="src/index.js"></script>
   </body>
 </html>
